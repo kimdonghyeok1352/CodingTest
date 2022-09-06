@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static String solution(String str) {
+		String result = "NO";
+		String tmp = new StringBuilder(str).reverse().toString();
+		if(str.equalsIgnoreCase(tmp)) {
+			result = "YES";
+		}
+		return result;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		System.out.println(solution(str));
+
+	}
+
+}
