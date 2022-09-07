@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static int solution(String s) {
+		int answer = 0;
+		for (char x : s.toCharArray()) {// 48~57아스키넘버 >0~9
+			if (x >= 48 && x <= 57)
+				answer = answer * 10 + (x - 48);
+
+		}
+
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		System.out.println(solution(str));
+
+	}
+
+}
+
+
+//Integer.parseInt(int)를 사용해서도 숫자화 시킬수 있음
